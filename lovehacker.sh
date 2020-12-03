@@ -89,7 +89,7 @@ fi
 sleep 0.5
 
 if [[ -e "Log.log" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] Cam file received!\e[0m\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] Photo received!\e[0m\n"
 rm -rf Log.log
 fi
 sleep 0.5
