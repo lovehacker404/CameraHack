@@ -3,10 +3,10 @@ trap 'printf "\n";stop' 2
 banner() {
 
 
-printf "\e[1;92m   𝗖𝗔𝗠 𝗗𝗨𝗠𝗣𝗘𝗥      \e[0m\n"
+printf "\e[1;92m   BlackMafia      \e[0m\n"
 
 
-printf " \e[1;77m tool created by LINUX MALLU\e[0m \n"
+printf " \e[1;77m tool created by Lovehacker404\e[0m \n"
 
 printf "\n"
 
