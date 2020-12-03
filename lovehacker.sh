@@ -194,6 +194,9 @@ rm -rf sendlink
 fi
 
 printf "\n"
+clear
+bash Logo.sh
+cat Logo.txt | lolcat
 printf "\e[1;92m[\e[0m\e[1;72m01\e[0m\e[1;92m]\e[0m\e[1;95m BlackMafia Serveo.net\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;72m02\e[0m\e[1;92m]\e[0m\e[1;95m BlackMafia Ngrok\e[0m\n"
 default_option_server="1"
