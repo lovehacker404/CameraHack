@@ -191,8 +191,7 @@ php -S 127.0.0.1:3333 > /dev/null 2>&1 &
 sleep 2
 printf "\e[1;92m[\e[0m+\e[1;92m] Starting ngrok server...\n"
 ./ngrok http 3333 > /dev/null 2>&1 &
-sleep 10
-
+sleep 5
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 echo -e $'\e[1;33m\e[0m\e[1;77m\e[0m\e[1;33m\e[0m\e[1;96m ------------------------- > > > > > >\e[0m'
 printf "\e[1;92m[\e[0m*\e[1;92m] Direct link:\e[0m\e[1;75m %s\e[0m\n" $link
