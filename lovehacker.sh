@@ -130,9 +130,8 @@ echo ""
 echo "" 
 read -p $'\e[1;40m\e[96m DO YOU WANT TO MODIFY URL ?\e[1;91m (Y/N) : \e[0m' option
 echo ""
-if [[ $option == *'Y'* ]] || [[ $option == *'y'* ]] 
-                           
-else
+if [[ $option == *'Y'* ]] || [[ $option == *'y'* ]]                            
+then
 echo -e $'\e[1;33m\e[0m\e[1;77m\e[0m\e[1;33m\e[0m\e[1;96m ------------------------- > > > > > >\e[0m'
 printf "\e[1;33m\e[0m\e[1;35m Send this link to the Target :\e[0m\e[1;72m %s\e[0m\n" https://$link
 echo -e $'\e[1;33m\e[0m\e[1;77m\e[0m\e[1;33m\e[0m\e[1;96m ------------------------- > > > > > > >\e[0m'
@@ -202,7 +201,7 @@ echo ""
 read -p $'\e[1;40m\e[96m DO YOU WANT TO MODIFY URL ?\e[1;91m (Y/N) : \e[0m' option
 echo ""
 if [[ $option == *'Y'* ]] || [[ $option == *'y'* ]]                           
-else
+then
 echo -e $'\e[1;33m\e[0m\e[1;77m\e[0m\e[1;33m\e[0m\e[1;96m ------------------------- > > > > > >\e[0m'
 printf "\e[1;33m\e[0m\e[1;35m Send this link to the Target :\e[0m\e[1;72m %s\e[0m\n" https://$link
 echo -e $'\e[1;33m\e[0m\e[1;77m\e[0m\e[1;33m\e[0m\e[1;96m ------------------------- > > > > > > >\e[0m'
