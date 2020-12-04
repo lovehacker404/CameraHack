@@ -35,3 +35,11 @@
 `chmod +x lovehacker.sh ngrok`
 
 `bash lovehacker.sh`
+
+To See Hack images >
+
+ls
+
+mv (image name with .png) /sdcard/
+
+Now go and chek your gallery for g.f image...
