@@ -14,6 +14,7 @@
 <p align="center">
 <img src="blackmafia37.jpg">
 <img src="blackmafia36.jpg">
+<img src="blackmafia39.jpg">
 <p align="center">
 <p align="center">
 <a href="https://github.com/lovehacker404"><img title="Author" src="https://img.shields.io/badge/Author-lovehacker404-red.svg?style=for-the-badge&logo=github"></a>
@@ -38,8 +39,10 @@
 
 To See Hack images >
 
-ls
+`ls`
 
-mv (image name with .png) /sdcard/
+`mv` (image name with .png) `/sdcard/`
+
+Any  file expoler open serch pic name
 
 Now go and chek your gallery for g.f image...
