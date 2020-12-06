@@ -39,6 +39,8 @@
 
 To See Hack images >
 
+`termux-setup-storage`
+
 `ls`
 
 `mv` (image name with .png) `/sdcard/`
