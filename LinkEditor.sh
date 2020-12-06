@@ -40,4 +40,4 @@ echo -en "\e[32m=>\e[0m "
 read words
 echo -e "\nGenerating Phish Link...\n"
 final=$mask-$words@$shorter
-echo -e "Here is the MaskPhish URL:\e[32m ${final} \e[0m\n"
+echo -e "Here is the Phish URL:\e[32m ${final} \e[0m\n"
