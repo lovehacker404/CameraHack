@@ -23,7 +23,7 @@ echo -e "\e[35m██║░╚═╝░██║██║░░██║██�
 echo -e "\e[35m╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝\e[0m"
 echo -e "\e[35m------ Your Mind is Your Best Weapon------\e[0m"
 echo -e "\e[1;36;42m         Phishing URL Editor          \e[0m \n"
-echo -n "Paste Phishing URL here (with http or https):"
+echo -n "\e[36mPaste Phishing URL here (with http or https):"
 read phish
 url_checker $phish
 short=$(curl -s https://da.gd/s/?url=${phish})
@@ -40,6 +40,6 @@ echo -e '\n\e[1;33;42mType social engineering words:(like free-money, best-pubg-
 echo -e "\e[31mDon't use space just use '-' between social engineering words\e[0m"
 echo -en "\e[32m==>\e[35m "
 read words
-echo -e "\n\e[1;34;42m        Generating Phish Link...       \n\e[0m"
+echo -e "\n\e[1;34;42m        Generating Phish Link...       \e[0m"
 final=$mask-$words@$shorter
-echo -e "\e[33mHere is the Phish URL:\e[36m ${final} \e[0m\n"
+echo -e "\e[33mHere is the Phish URL:\e[36m ${final} \e[0m"
