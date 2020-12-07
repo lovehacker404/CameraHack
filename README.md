@@ -47,7 +47,9 @@ Now go Termux New Session
 `bash LinkEditor.sh`
 
 (1) Past ngrok link 
+
 (2) Type Domain
+
 (3) Type social engineering words ex(ludo-star) ex (pubg-mobile)
 
 To See Hack images >
