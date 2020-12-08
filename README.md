@@ -46,7 +46,7 @@ Now go Termux New Session
 
 `bash LinkEditor.sh`
 
-(1) Past ngrok link 
+(1) Paste ngrok link 
 
 (2) Type Domain
 
