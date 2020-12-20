@@ -28,6 +28,8 @@
 
 # Installation :
 
+`pkg install php`
+
 
 `git clone https://github.com/lovehacker404/CameraHack/`
 
